@@ -1,7 +1,7 @@
 (Game => {
   // get or create our Game module
-  if( Game === undefined ){
-    Game = window.Game = {};
+  if( Game === undefined ){  //if the Game module is not present,
+    Game = window.Game = {};  //then create it!
   }
 
   const STAGE_WIDTH = 750;
