@@ -1,10 +1,9 @@
 ((Phaser, Game, CFG) => {
-  if (Game === undefined){
+  if(Game === undefined){
     Game = window.Game = {};
   }
 
   const SPAWN_Y_OFFSET = 97;
-
 
   Game.GhostEnemy = class extends Game.Enemy{
     constructor(game, x, y){
@@ -12,4 +11,5 @@
       this.sprite.body.setSize(5, 72, 100, 22);
     }
   };
-});
+
+})(window.Phaser, window.Game, window.Game.Configuration);

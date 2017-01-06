@@ -1,5 +1,4 @@
 ((Phaser, Game, CFG) => {
-
   if(Game === undefined){
     Game = window.Game = {};
   }
@@ -34,6 +33,5 @@
 
     }
   };
-
 
 })(window.Phaser, window.Game, window.Game.Configuration);
